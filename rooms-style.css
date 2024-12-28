@@ -1,0 +1,104 @@
+.rooms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 140px;
+}
+.rooms > h1{
+    text-align: center;
+}
+.all-room{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.all-room .room{
+    background-color: white;
+    max-width: 32%;
+}
+.room-image{
+    width: 100%;
+    height: 280px;
+}
+.room-1{
+    background: url(/photo/room-1.jpg.webp) center / cover;
+}
+.room-2{
+    background: url(/photo/room-2.jpg.webp) center / cover;
+}
+.room-3{
+    background: url(/photo/room-3.jpg.webp) center / cover;
+}
+.about-room{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 48px;
+}
+.about-room > p{
+    font: 400 16px 'Nunito';
+    color: #999;
+    text-align: center;
+    line-height: 28px;
+    margin: 15px 0 ;
+}
+.about-room > h3{
+    font: 400 30px "Old Standard TT";
+    text-align: center;
+    transition: .3s;
+    color: rgba(0, 0, 0, 0.9);
+}
+.room-price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.room-price > a{
+    font: 700 14px 'Nunito';
+    color:rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    border: 1px solid #ebebeb;
+    padding: 5px 10px;
+}
+.room-price p{
+    font: 700 14px 'Nunito';
+    text-transform: uppercase;
+    color: #c5a880;
+}
+@media only screen and (max-width:1050px) {
+    .all-room{
+        flex-wrap: wrap;
+    }
+    .all-room{
+        row-gap: 20px;
+    }
+    .all-room .room{
+        max-width: 49%;
+    }
+    .all-room .room:last-child{
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:768px) {
+    .all-room{
+        row-gap: 50px;
+    }
+    .all-room .room{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .all-room .room:nth-child(2){
+        flex-direction: column;
+    }
+    .rooms > h1{
+        font-size: 3em;
+        line-height: 60px;
+    }
+}
+@media only screen and (max-width:481px) {
+    .rooms > h1{
+        font-size: 2.3em;
+        line-height: 40px;
+    }
+}
