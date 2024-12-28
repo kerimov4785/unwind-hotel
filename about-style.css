@@ -110,6 +110,9 @@
         row-gap: 50px;
     
     }
+    .box2 h1{
+        line-height: 80px;
+    }
     .about .box1{
         width: 100%;
         display: flex;
