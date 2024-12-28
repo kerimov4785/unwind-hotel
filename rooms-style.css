@@ -13,27 +13,32 @@
     margin-top: 60px;
 }
 .all-room .room{
-    background-color: white;
     max-width: 32%;
 }
 .room-image{
     width: 100%;
     height: 280px;
+    transition: .3s;
 }
 .room-1{
     background: url(/photo/room-1.jpg.webp) center / cover;
+    cursor: pointer;
 }
 .room-2{
     background: url(/photo/room-2.jpg.webp) center / cover;
+    cursor: pointer;
 }
 .room-3{
     background: url(/photo/room-3.jpg.webp) center / cover;
+    cursor: pointer;
 }
 .about-room{
     display: flex;
     flex-direction: column;
     align-items: center ;
     padding: 48px;
+    transition: .3s;
+    background-color: white;
 }
 .about-room > p{
     font: 400 16px 'Nunito';
@@ -59,11 +64,25 @@
     text-transform: uppercase;
     border: 1px solid #ebebeb;
     padding: 5px 10px;
+    transition: .3s;
 }
 .room-price p{
     font: 700 14px 'Nunito';
     text-transform: uppercase;
     color: #c5a880;
+}
+.all-room .room:hover .about-room{
+    background-color: #222;
+}
+.all-room .room:hover .about-room h3{
+    color: white;
+}
+.all-room .room:hover .room-price > a{
+    color: white;
+    border-color: #ebebeb2a;
+}
+.all-room .room:hover .room-image{
+    filter: brightness(65%);
 }
 @media only screen and (max-width:1050px) {
     .all-room{
