@@ -1,9 +1,12 @@
-.booking{
-    background:linear-gradient(rgba(44, 44, 44, 0.92),rgba(39, 39, 39, 0.92)), url(bg_1.jpg) center / cover;
+.booking-bg{
+    background:linear-gradient(rgba(44, 44, 44, 0.92),rgba(39, 39, 39, 0.92)), url(/photo/bg_1.jpg) center / cover;
     height: 245px;
+}
+.booking{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 245px;
     gap: 30px;
 }
 .booking h2{
@@ -20,4 +23,42 @@
     color: white;
     background-color: #c5a880;
     padding: 25px 50px;    
+}
+@media only screen and (max-width:1200px) {
+
+}
+
+@media only screen and (max-width:1050px) {
+    .booking{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .booking{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+    }
+    .booking .text h2{
+        width: 100%;
+        font-size: 2.2em;
+    }
+    .booking a{
+    padding: 15px 35px;    
+    }
+}
+
+@media only screen and (max-width:481px) {
+    .booking .text h2{
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .booking-bg{
+        height: 270px;
+    }
+    .booking{
+        height: 270px;
+    }
 }
