@@ -1,0 +1,23 @@
+.booking{
+    background:linear-gradient(rgba(44, 44, 44, 0.92),rgba(39, 39, 39, 0.92)), url(bg_1.jpg) center / cover;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.booking h2{
+    font: 400 40px "Old Standard TT";
+    color: white;
+    width: 500px;
+    line-height: 60px;
+}
+.booking a{
+    display: block;
+    font: 700 12px 'Nunito';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #c5a880;
+    padding: 25px 50px;    
+}

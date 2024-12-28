@@ -1,0 +1,140 @@
+.section1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.all-box {
+    display: flex;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    justify-content: center;
+}
+
+.all-box .mini-box:last-child {
+    background-color: #c5a880;
+    padding: 0px 10px;
+    align-items: center;
+    flex: 2.3;
+}
+
+.section1 .mini-box {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding-left: 60px;
+    padding-inline: 60px 30px;
+    justify-content: center;
+    flex: 2;
+}
+
+.section1 .mini-box p {
+    font: 700 13px 'Nunito';
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section1 .mini-box input::placeholder {
+    font: 400 16px 'Nunito';
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.fa-calendar-days {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.section1 .mini-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font: 400 16px 'Nunito';
+    color: rgba(255, 255, 255, 0.4);
+    width: 120px;
+}
+
+select {
+    background: transparent;
+    font: 400 16px 'Nunito';
+    color: rgba(255, 255, 255, 0.4);
+    border: none;
+    outline: none;
+    margin-left: -3px;
+    width: 130px;
+}
+
+select option {
+    font: 400 16px 'Nunito';
+    color: #000;
+}
+
+select option:hover {
+    background-color: aqua;
+}
+
+.section1 .mini-box h3 {
+    font: 600 16px 'Nunito';
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 120px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1200px) {
+    .all-box {
+        width: 80%;
+    }
+
+    .all-box .mini-box {
+        padding-inline: 50px 25px;
+    }
+    .all-box .mini-box label{
+        width:140px;
+    }
+    .all-box .mini-box:last-child {
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .all-box{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        transform: translateY(-38%);
+    }
+    .all-box .mini-box{
+        height: 100px;
+    }
+    .all-box .mini-box1{
+        grid-column: 1/2;
+    }
+    .all-box .mini-box2{
+        grid-column: 2/3;
+    }
+    .all-box .mini-box5{
+        grid-column: 1/3;
+    }
+    .mini-box5 h3{
+        width:inherit !important;
+    }
+    .mini-box5{
+        height: 75px !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .all-box{
+        display: flex;
+        flex-direction: column;
+        height:450px;
+        transform: translateY(-20%);
+    }
+    .all-box .mini-box5{
+        flex: 1.1 !important;
+    }
+}
+
+@media only screen and (max-width:481px) {}

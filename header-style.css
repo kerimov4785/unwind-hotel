@@ -1,0 +1,157 @@
+.container-nav{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+header{
+    background: linear-gradient(rgba(46, 46, 46, 0.562),rgba(0, 0, 0, 0.418)), url(/photo/bg_1.jpg) center / cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.nav-bar{
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar .menu{
+    display: none;
+}
+.nav-bar .menu p{
+    font: 600 16px 'Nunito';
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+}
+.nav-bar i{
+    font-size: 16px;
+    color: white;
+    margin-right: 5px;
+}
+.logo{
+    display: inline-block;
+    /* height: 50%; */
+    /* line-height: 0px; */
+}
+.logo h3{
+    font: 700 30px "Nunito";
+    color: white;
+    text-align: center;
+    line-height: 24px;
+}
+.logo span{
+    font: 700 17px 'Nunito';
+    font-variant: small-caps;
+    display:block;
+    line-height:15px;
+    letter-spacing: 1px;
+    color: white;
+    padding-left: 3px;
+}
+nav{
+    display: flex;
+    gap: 50px;
+}
+nav a:first-child{
+    color: white;
+}
+nav a{
+    font: 700 13px 'Nunito';
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.header-text p{
+    font:700 13px 'Nunito';
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.header-text h1{
+    font: 700 80px 'Old Standard TT';
+    color: white;
+}
+.buttons{
+    display: flex;
+    gap: 4px;
+    margin-top: 30px;
+}
+.buttons a{
+    font: 700 12px 'Nunito';
+    color: white;
+    text-transform: uppercase;
+    padding: 17px 40px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#button1{
+    background-color:#c5a880 ;
+    border: 1px solid #c5a880;
+}
+#button2{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+#button2:hover{
+    background-color: white;
+    color: #000;
+}
+main{
+    background-color: #f8f8f8;
+}
+
+@media only screen and (max-width:1200px) {
+    .container{
+        margin: 0 15px;
+    }
+    .nav-bar{
+        padding-inline: 15px;
+    }
+}
+@media only screen and (max-width:1050px) {
+    nav{
+        display: none;
+    }
+    .nav-bar .menu{
+        display: block;
+    }
+    .nav-bar{
+        background-color: #222;
+        height: 80px;
+    }
+    .header-text{
+        height: 90vh;
+    }
+    .header-text h1{
+        text-align: center;
+        font-weight: 700;
+    }
+}
+@media only screen and (max-width:768px) {
+    .header-text h1{
+        font-size: 2.5em;
+    }
+    .header-text p{
+        max-width: 450px;
+        text-align: center;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width:481px) {
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="check-style.css">
+    <link rel="stylesheet" href="about-style.css">
+    <link rel="stylesheet" href="booking-style.css">
+    <link rel="stylesheet" href="service-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container-nav">
+            <div class="nav-bar">
+                <div class="logo">
+                    <h3>Unwind</h3>
+                    <span>hotel booking</span>
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>menu</p>
+                </div>
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Rooms</a>
+                    <a href="">Resto & Bar</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-text">
+                <p>Enjoy Your Wonderful Holidays With A Great Luxury Experience!</p>
+                <h1>Most Relaxing Place</h1>
+                <div class="buttons">
+                    <a href="" id="button1">take a tour</a>
+                    <a href="" id="button2">learn more</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="section1">
+                <div class="all-box">
+                    <div class="mini-box mini-box1">
+                        <p>Check-In</p>
+                        <label for="text">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <input type="datetime" id="text" placeholder="Check-In Date">
+                        </label>
+                    </div>
+                    <div class="mini-box mini-box2">
+                        <p>Check-Out</p>
+                        <label for="datetime">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <input type="text" id="text" placeholder="Check-In Date">
+                        </label>
+                    </div>
+                    <div class="mini-box mini-box3">
+                        <p>rooms</p>
+                        <select name="" id="">
+                            <option value="">Suite</option>
+                            <option value="">Family Room</option>
+                            <option value="">Classic Room</option>
+                            <option value="">Luxury Room</option>
+                            <option value="">Superior Room</option>
+                        </select>
+                    </div>
+                    <div class="mini-box mini-box4">
+                        <p>Guests</p>
+                        <select name="" id="">
+                            <option value="">1 Person</option>
+                            <option value="">2 Person</option>
+                            <option value="">3 Person</option>
+                            <option value="">4 Person</option>
+                            <option value="">5 Person</option>
+                            <option value="">6-9 Person</option>
+                            <option value="">10 Person</option>
+                        </select>
+                    </div>
+                    <div class="mini-box mini-box5">
+                        <h3>check availability</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- <div class="container">
+            <section class="about">
+                <div class="box1" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="photo img1" style="background: url(/photo/f-services.jpg.webp) center / cover;"></div>
+                    <div class="mini-box room">
+                        <i class="fa-solid fa-bed"></i>
+                        <h3>Cozy Room</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                    <div class="photo img2" style="background: url(/photo/f-services-2.jpg.webp) center / cover;"></div>
+                    <div class="mini-box offers">
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Special Offers</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="box2" data-aos="fade-up" data-aos-duration="1100">
+                    <h5>About Us</h5>
+                    <h1>Unwind A Hotel Booking Agency</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                        Semantics, a large language ocean. </p>
+                    <a href="">Book your room now</a>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="service">
+                <h5 data-aos="fade-up" data-aos-duration="900">Unwind Services</h5>
+                <h1 data-aos="fade-up" data-aos-duration="1000">Explore Our Hotel Services</h1>
+                <div class="service-boxes">
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="200">
+                        <i class="fa-solid fa-wifi"></i>
+                        <p>Free Wifi</p>
+                    </div>
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="400">
+                        <i class="fa-solid fa-computer"></i>
+                        <p>Easy Booking</p>
+                    </div>
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="600">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Restaurant</p>
+                    </div>
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="800">
+                        <i class="fa-solid fa-person-swimming"></i>
+                        <p>Swimming Pool</p>
+                    </div>
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <p>Beauty & Health</p>
+                    </div>
+                    <div class="service-box" data-aos="fade-up" data-aos-duration="1200">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p>Help & Support</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="booking">
+            <div class="text">
+                <h5 style="line-height: 30px;">Find Best Hotel For Leaving</h5>
+                <h2>Find the Best Hotel in Your Next Vacation</h2>
+            </div>
+            <div>
+                <a href="">book now</a>
+            </div>
+        </section> -->
+    </main> 
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
