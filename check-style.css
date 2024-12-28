@@ -137,4 +137,8 @@ select option:hover {
     }
 }
 
-@media only screen and (max-width:481px) {}
+@media only screen and (max-width:481px) {
+    .all-box{
+        width: 100%;
+    }
+}
