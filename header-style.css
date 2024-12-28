@@ -137,6 +137,9 @@ main{
         text-align: center;
         font-weight: 700;
     }
+    header{
+        background-attachment: scroll;
+    }
 }
 @media only screen and (max-width:768px) {
     .header-text h1{
