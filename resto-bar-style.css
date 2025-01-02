@@ -81,10 +81,6 @@
     }
 }
 @media only screen and (max-width:768px)  {
-    .resto-bar h1{
-        font-size: 2.3em;
-        line-height: 40px;
-    }
     .resto-food-all{
         flex-direction: column;
     }
@@ -95,5 +91,23 @@
     }
     .resto-food-box{
         width: 100%;
+    }
+}
+@media only screen and (max-width:520px)  {
+    .resto-bar h1{
+        font-size: 2.3em;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width:347px)  {
+    .resto-content{
+        height: 1600px;
+    }
+    .resto-food-box{
+        padding-inline: 15px;
+    }
+    .resto-food-box h4{
+        margin-right: 7px;
+        font-size: 18px;
     }
 }
