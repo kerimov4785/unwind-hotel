@@ -74,6 +74,7 @@
     }
     .resto-food-box p{
         align-self: center;
+        margin-top: 0px;
     }
     .resto-food-box h4{
         flex: 1;
