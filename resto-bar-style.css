@@ -1,0 +1,98 @@
+.resto-bar{
+    padding: 100px 0;
+    margin: 0 10px;
+}
+.resto-bar h5,.resto-bar h1{
+    text-align: center;
+}
+.resto-content{
+    display: flex;
+    gap: 80px;
+    height: 670px;
+    margin-top: 40px;
+}
+.resto-content > .img{
+    background: linear-gradient(rgba(48, 46, 46, 0.424),rgba(46, 45, 45, 0.425)),url(/photo/resto-bar.jpg.webp) center / cover;
+    height:100%;
+    width:40%;
+}
+.resto-food-all{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+.resto-food-box{
+    width: 49.3%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding:30px;
+    background-color: white;
+    justify-content: space-between;
+}
+.resto-food-box:hover{
+    background-color: #222;
+}
+.resto-food-box:hover h4{
+    color: white;
+}
+.resto-food-box .img{
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+}
+.resto-food-box h4{
+    font: 600 20px 'Nunito';
+    color: #222;
+    width: 39%;
+    margin-inline: 15px 20px;
+    line-height: 30px;
+}
+.resto-food-box p{
+    align-self: start;
+    margin-top: 5px;
+    color: #c5a880;
+    font: 400 20px 'Nunito';
+}
+@media only screen and (min-width:1251px) {
+    .resto-food-box h4{
+        margin-right: auto;
+    }
+}
+@media only screen and  (max-width:1250px) {
+    .resto-content{
+        height: 900px;
+        row-gap: 50px;
+    }
+    .resto-content > .img{
+        width: 100%;
+    }
+    .resto-content{
+        flex-direction: column;
+    }
+    .resto-food-box p{
+        align-self: center;
+    }
+    .resto-food-box h4{
+        flex: 1;
+    }
+}
+@media only screen and (max-width:768px)  {
+    .resto-bar h1{
+        font-size: 2.3em;
+        line-height: 40px;
+    }
+    .resto-food-all{
+        flex-direction: column;
+    }
+    .resto-content{
+        height: 1500px;
+        row-gap: 0;
+        margin-top: 5q0px;
+    }
+    .resto-food-box{
+        width: 100%;
+    }
+}

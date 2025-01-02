@@ -64,13 +64,13 @@
     text-align: center;
     line-height: 28px;
 }
-.box2 h5,.service h5,.booking h5,.rooms h5{
+.box2 h5,.service h5,.booking h5,.rooms h5,.resto-bar h5{
     font: 700 13px 'Nunito';
     color: #c5a880;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.box2 h1,.service h1,.rooms h1{
+.box2 h1,.service h1,.rooms h1,.resto-bar h1{
     font: 400 64px "Old Standard TT";
     color: rgba(0, 0, 0, 0.8);
     line-height: 90px;
