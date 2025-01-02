@@ -61,18 +61,13 @@
     }
 }
 @media only screen and (max-width:425px) {
-    .take-tour h2{
-        font-size: 2.5em;
-    }
     .take-tour{
         gap: 10px;
         height: 50vh;
     }
-    .play,.play-circle{
-        width: 60px;
-        height: 60px;
-    }
-    .play i{
-        font-size: 28px;
+}
+@media only screen and (max-width:388px) {
+    .take-tour h2{
+        line-height: 74px;
     }
 }
