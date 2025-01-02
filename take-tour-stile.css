@@ -1,0 +1,78 @@
+.take-tour{
+    background:linear-gradient(rgba(48, 46, 46, 0.537),rgba(44, 42, 42, 0.524)), url(/photo/bg_2.jpg.webp) center / cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.take-tour p{
+    font: 700 13px 'Nunito';
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.take-tour h2{
+    font: 400 70px "Old Standard TT";
+    text-align: center;
+}
+.play-all{
+    position: relative;
+}
+.play-circle{
+    position: absolute;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+    background-color: #c5a880;
+    z-index: 1;
+    animation-name: play-circle;
+    animation-delay: .8s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.play{
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    background-color: #c5a880;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+.play i{
+    font-size: 34px;
+    z-index: 2;
+}
+@keyframes play-circle{
+    from {scale: 1; background-color: #c5a88067;}
+    to {scale: 1.7; background-color: #c5a88000;}
+}
+@media only screen and (max-width:1024px) {
+    .take-tour{
+        height: 70vh;
+    }
+}
+@media only screen and (max-width:425px) {
+    .take-tour h2{
+        font-size: 2.5em;
+    }
+    .take-tour{
+        gap: 10px;
+        height: 50vh;
+    }
+    .play,.play-circle{
+        width: 60px;
+        height: 60px;
+    }
+    .play i{
+        font-size: 28px;
+    }
+}
