@@ -1,0 +1,54 @@
+.statistics{
+    background-color: #222;
+    padding-bottom: 100px;
+}
+.statistics-box-all{
+    display: flex;
+}
+.statistics-box .line{
+    height: 100px;
+    width: 1px;
+    background-color: #c5a8801f;
+}
+.statistics-box{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statistics-box h3{
+    font: 700 40px 'Nunito';
+    color: #c5a880;
+    line-height: 25px;
+}
+.statistics-box p{
+    font: 400 16px 'Nunito';
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
+}
+@media only screen and (max-width:1000px) {
+    .statistics-box-all{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        row-gap: 100px;
+    }
+    .statistics-box{
+        flex: inherit;
+        width: 350px;
+    }
+}
+@media only screen and (max-width:730px) {
+    .statistics-box{
+        width: 250px;
+    }
+}
+@media only screen and (max-width:530px) {
+    .statistics-box{
+        width: 200px;
+    }
+    .statistics-box-all{
+        row-gap: 60px;
+    }
+}
