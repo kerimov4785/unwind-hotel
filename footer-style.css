@@ -1,0 +1,138 @@
+footer{
+    background-color: #1a1a1a;
+    padding-top: 100px;
+}
+.footer-all-box{
+    display: flex;
+    gap: 30px;
+}
+.footer-all-box > div{
+    flex: 2;
+}
+.footer-box1{
+    flex: 1.7 !important;
+}
+footer .logo{
+    cursor: pointer;
+    font: 700 30px 'Nunito';
+    color: white;
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 40px;
+
+}
+footer .logo span{
+    font: 700 12px 'Nunito';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.footer-box1 p{
+    max-width: 250px;
+    font: 400 16px 'Nunito';
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.apps-icon{
+    color: #c5a880;
+    font-size: 14px;
+}
+.apps{
+    display: flex;
+    gap: 10px;
+}
+.app{
+    display:flex;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.footer-box h3{
+    font: 700 20px 'Nunito';
+    color: white;
+    margin-bottom: 40px;
+}
+.footer-box a{
+    display: block;
+    align-content: center;
+    font: 400 16px 'Nunito';
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+.footer-box a i{
+    margin-right: 7px;
+}
+.service-links{
+    display: flex;
+    gap: 50px;
+}
+.footer-box:last-child i{
+    color: #c5a880;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.footer-box:last-child p{
+    display: flex;
+    font: 400 15px 'Nunito';
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+.footer-box:last-child a{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer-all-box a{
+    transition: .3s;
+}
+.footer-all-box a:hover{
+    color: #c5a880;
+}
+.copyright{
+    margin-top: 120px;
+    background-color: #151515;
+    padding: 60px;
+}
+.copyright p{
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 13px 'Nunito';
+    text-align: center;
+}
+@media only screen and (max-width:1000px) {
+    .footer-all-box{
+        flex-wrap: wrap;
+    }
+    .footer-box1 p{
+        max-width: inherit;
+    }
+    .footer-all-box > div{
+        min-width: 45%;
+    }
+    .service-links{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-box:last-child p{
+        display: flex;
+        font: 400 15px 'Nunito';
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 20px;
+        margin-bottom: 20px;
+        width:100%;
+    }
+}
+@media only screen and (max-width:768px) {
+    .footer-all-box{
+        flex-direction: column;
+    }
+    footer{
+        padding-top:50px;
+    }
+    .copyright{
+        margin-top: 80px;
+    }
+}
