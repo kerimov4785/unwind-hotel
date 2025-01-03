@@ -24,10 +24,6 @@
     background-color: #c5a880;
     padding: 25px 50px;    
 }
-@media only screen and (max-width:1200px) {
-
-}
-
 @media only screen and (max-width:1050px) {
     .booking{
         justify-content: space-between;

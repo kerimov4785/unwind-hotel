@@ -1,0 +1,78 @@
+.testimonial{
+    padding: 100px 0;
+}
+.testimonial h5,.testimonial h1{
+    text-align: center;
+}
+.testimonial-all-box{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.testimonial-box{
+    padding:35px 40px 30px 30px;
+    background-color: white;
+    flex: 1;
+    box-shadow: rgba(149, 157, 165, 0.0513) 0px 8px 24px;
+}
+.testimonial-box .img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testimonial-box .person{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.about-person h4{
+    margin-bottom: 10px;
+    font: 700 22px 'Nunito';
+    color: #222;
+}
+.about-person h5{
+    font: 600 13px 'Nunito';
+    color: #c5a880;
+    letter-spacing: 0;
+    text-align: inherit;
+}
+.testimonial-box p{
+    font: 400 16px 'Nunito';
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 28px;
+    max-width: 280px;
+    min-width: 210px;
+    margin: 20px 0 20px;
+}
+@media only screen and (max-width:1000px) {
+    .testimonial-all-box{
+        flex-wrap: wrap;
+    }
+    .testimonial-box p{
+        max-width: 100%;
+        min-width: 280px;
+    }
+    .testimonial-box:last-child{
+        flex: 0;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:768px)  {
+    .testimonial-all-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .testimonial-box p{
+        min-width: 0px;
+    }
+    .testimonial{
+        padding-top: 0px;
+    }
+}
+@media only screen and (max-width:430px)  {
+    .testimonial h1{
+        font-size: 2.3em;
+        line-height: 1em;
+    }
+}

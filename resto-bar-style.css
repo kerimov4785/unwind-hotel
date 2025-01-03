@@ -99,6 +99,11 @@
         line-height: 40px;
     }
 }
+@media only screen and (max-width:430px)  {
+    .resto-bar{
+        padding-bottom: 60px;
+    }
+}
 @media only screen and (max-width:347px)  {
     .resto-content{
         height: 1600px;
