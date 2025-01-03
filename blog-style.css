@@ -26,6 +26,7 @@
 .about-blog {
     padding: 30px 30px 45px 30px;
     background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.096) 0px 8px 24px;
 }
 
 .about-blog p {
