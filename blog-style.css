@@ -1,39 +1,48 @@
-.blog{
+.blog {
     padding: 100px 0;
 }
-.blog-box-all{
+
+.blog-box-all {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 50px;
 }
-.blog h5,.blog h1{
+
+.blog h5,
+.blog h1 {
     text-align: center;
 }
-.blog-box .img{
+
+.blog-box .img {
     height: 300px;
     cursor: pointer;
 }
-.blog-box{
+
+.blog-box {
     flex: 1;
 }
-.about-blog{
+
+.about-blog {
     padding: 30px 30px 45px 30px;
     background-color: white;
 }
-.about-blog p{
+
+.about-blog p {
     font: 600 13px 'Nunito';
     color: #999999;
     text-transform: uppercase;
     line-height: 24px;
 }
-.about-blog p:last-child{
-    font:400 16px 'Nunito';
+
+.about-blog p:last-child {
+    font: 400 16px 'Nunito';
     color: #999;
     text-transform: inherit;
     line-height: 28px;
 }
-.about-blog h4{
+
+.about-blog h4 {
     cursor: pointer;
     font: 400 22px "Old Standard TT";
     color: #000000;
@@ -41,37 +50,50 @@
     margin: 20px 0;
     transition: .3s;
 }
-.about-blog h4:hover{
+
+.about-blog h4:hover {
     color: #c5a880;
 }
+
 @media only screen and (max-width:1000px) {
-    .blog-box{
+    .blog-box {
         min-width: 304px;
     }
-    .blog-box-all{
+
+    .blog-box-all {
         gap: 20px;
     }
 }
+
 @media only screen and (max-width:768px) {
-    .blog-box-all{
+    .blog-box-all {
         flex-direction: column;
         min-width: 10px;
         gap: 0px;
     }
 }
-@media only screen and (max-width:500px) {.blog-box-all{gap: 30px;}}
-@media only screen and (max-width:425px) {
-    .blog-box-all{
-        margin-top: 40px;
+
+@media only screen and (max-width:500px) {
+    .blog-box-all {
+        gap: 30px;
     }
-    .blog-box{
-        min-width: 250px;
-    }
-    .blog{
-        padding-top: 45px;
-    }
-    .blog h1{
+
+    .blog h1 {
         font-size: 2.3em;
         line-height: 38px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .blog-box-all {
+        margin-top: 40px;
+    }
+
+    .blog-box {
+        min-width: 250px;
+    }
+
+    .blog {
+        padding-top: 45px;
     }
 }
